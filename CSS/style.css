@@ -59,11 +59,10 @@ a:hover{
   font-size: .75rem;
   padding: 20px;
 }
-/* @media only screen and (max-width: 600px) {
-.top-background {
-    background-image: url("images/Background.jpg");
-  }
-} */
+.top-background{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .Profile_photo{
   border-radius: 50%;
   margin-bottom: 2%;

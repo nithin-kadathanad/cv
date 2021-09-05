@@ -8,16 +8,15 @@ hr{
   border: dotted black 6px;
   width: 5%;
   border-bottom: none;
-  margin: 100px auto;
+  margin: 5% auto;
   color: white;
 }
 
 h2{
   font-size: 2rem;
-  margin: 0 auto 30px auto;
   color: #6E7C7C;
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
 }
 
 h4{
@@ -56,13 +55,12 @@ a:hover{
   margin-bottom: 5%
 }
 .company-img{
-  border-radius: 50%;
-  width: 80%;
-  margin:20px;
+  border-radius: 100%;
+
 }
 .experience-row{
   width: 80%;
-  margin: 2% 15%;
+  margin: 2% 10%;
 }
 .company-description{
   text-align: left;

@@ -3,231 +3,239 @@
   <head>
     <meta charset="utf-8">
     <title>Nithin KV</title>
-    <link rel="stylesheet" href="CSS/style.css">
+
     <link rel="icon" href="favicon.ico">
-    <!-- Font Awesome -->
-      <script src="https://kit.fontawesome.com/1d7f201eff.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d7f201eff.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <div class="top">
-      <picture>
-        <source srcset="images/Background.jpg" media="(max-width: 600px)">
-        <source srcset="images/Background1.jpg">
-        <img class="top-background" src="images/Background1.jpg" alt="">
-      </picture>
+  <!-- Title Section -->
+  <section id="title">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nithin Kadathand Vinod</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#profile">Profile</a>
+              <a class="nav-link" href="#experience">Work Experience</a>
+              <a class="nav-link" href="#skills">Skills and Tools</a>
+              <a class="nav-link" href="#acheivement">Acheivement</a>
+              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="#contact">Contacts</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+      <img class="container-fluid title-img" src="images/Background2.jpg" alt="images/Background1.jpg">
 
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="profile-data">
+      <img class="Profile_photo" src="images/Profile_photo.jpg" alt="">
+      <h2>Hello...</h2>
+      <p class="intro">I am a Senior Software Engineer at Robert Bosch and have 6+ years of experience.I would like to do responsible and challenging tasks where my education and work experience will have valuable application</p>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img class="Profile_photo" src="images/Profile_photo.jpg" alt="">
-        <h2>Hello...</h2>
-        <p class="intro">I am a Senior Software Engineer at Robert Bosch and have 6+ years of experience.I would like to do responsible and challenging tasks where my education and work experience will have valuable application</p>
+  </section>
+  <hr>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <img class="work-img" src="images/work.png" alt="">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <hr>
-      <div class="Experience">
-        <h2>Work Experience</h2>
-        <img class="work-img" src="images/work.png" alt="">
-          <div class="Experience-row">
-            <img class="company-img" src="images/bosch.jpg" alt="">
-            <div class="bosch-table">
-              <table class="company">
-                <tr>
-                  <td class="company-Role"><strong>Senior Software Engineer</strong><em><a href="https://www.bosch.in/">@Coimbatore, Tamil Nadu, India</a></em></td>
-                  <td>|</td>
-                  <td class="company-Duration"> 08/2018 to Current</td>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
 
-                </tr>
-              </table>
+          <h4><strong>Senior Software Engineer</strong><em><a href="https://www.bosch.in/">@Coimbatore, Tamil Nadu, India</a></em></h2>
+          <h6>08/2018 to Current</h4>
+          <div class="row experience-row">
+            <div class="col col-lg-2 align-self-center company-img-box">
+              <img src="images/bosch.jpg" class="company-img" alt="...">
             </div>
-            <div class="company-Experience">
-              <ul class="company-Experience-list">
-                <li>Developed Engine management system software (Power train domain) for Chinese OEMs.</li>
-                <li>Good experience in SDLC with V-Model from requirement gathering to system testing.</li>
-                <li>Good experience in Functional safety - ISO26262 and AUTOSAR architecture.</li>
-                <li>Good Knowledge about CAN 2.0 Protocol.</li>
-                <li>Worked with Engine management system software which is certified with Quality of ASPICE Level 2</li>
-              </ul>
+            <div class="col col-lg-8 align-self-center company-description">
+              <p>Developed Engine management system software (Power train domain) for Chinese OEMs.</p>
+              <p>Good experience in SDLC with V-Model from requirement gathering to system testing.</p>
+              <p>Good experience in Functional safety - ISO26262 and AUTOSAR architecture.</p>
+              <p>Good Knowledge about CAN 2.0 Protocol.</p>
+              <p>Worked with Engine management system software which is certified with Quality of ASPICE Level 2</p>
             </div>
-        </div>
-        <div class="Experience-row">
-          <img class="company-img" src="images/tcs.png" alt="">
-          <div class="tcs-table">
-          <table class="company">
-            <tr>
-              <td class="company-Role"><strong>System Engineer</strong><em><a href="https://www.tcs.com/">@Pune, Maharashtra, India</a></em></td>
-              <td>|</td>
-              <td class="company-Duration"> 08/2016 to 08/2018</td>
-
-            </tr>
-          </table>
           </div>
-          <div class="company-Experience">
-            <ul class="company-Experience-list">
-              <li>Proficiently designed and developed HMI for Self Learning Car, Android Auto and CarPlay Features
-              of Jaguar Landrover Multimedia Infotainment Systems as per the UML standards.</li>
-              <li>Completely handled the release management process by coordinating the release activities and
-              contiously monitoring the process in GITLAB.</li>
-              <li>Good experience in software verification and static testing (MISRA 2012), Unit testing and continuous integration.</li>
 
-            </ul>
+        </div>
+        <div class="carousel-item">
+
+          <h4><strong>System Engineer</strong><em><a href="https://www.tcs.com/">@Pune, Maharashtra, India</a></em></h4>
+          <h6>08/2016 to 08/2018</h6>
+          <div class="row experience-row">
+            <div class="col col-lg-2 align-self-center company-img-box">
+              <img src="images/tcs.png" class="company-img" alt="...">
+            </div>
+            <div class="col col-lg-8 align-self-center company-description">
+              <p>Proficiently designed and developed HMI for Self Learning Car, Android Auto and CarPlay Features
+              of Jaguar Landrover Multimedia Infotainment Systems as per the UML standards.</p>
+              <p>Completely handled the release management process by coordinating the release activities and
+              contiously monitoring the process in GITLAB.</p>
+              <p>Good experience in software verification and static testing (MISRA 2012), Unit testing and continuous integration.</p>
+            </div>
           </div>
-        </div>
-        <div class="Experience-row">
-        <img class="company-img" src="images/nest.png" alt="">
-        <div class="Nest-table">
-          <table class="company">
-            <tr>
-              <td class="company-Role"><strong>Technician</strong><em><a href="https://sfotechnologies.net/">@Cochin, Kerala, India</a></em></td>
-              <td>|</td>
-              <td class="company-Duration">06/2012 to 06/2013</td>
-
-            </tr>
-          </table>
-        </div>
-        <div class="company-Experience">
-          <ul class="company-Experience-list">
-            <li>Soldering of PCB boards , Inspection,Testing and Debugging of Electronic Circuits
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      </div>
-      <hr>
-      <div class="Skills-Tools">
-        <h2>Technical Skills and Tools</h2>
-        <div class="Skills-Tool-box">
-          <img class="Skills-Tool-img" src="images/skill.png" alt="">
-        </div>
-        <div class="Skills-Tool-Table-box">
-          <table class="Skills-Tool-Table">
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">C </td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">HTML</td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">C++ </td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">Python </td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">Linux </td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">DISTI GL Studio</td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">IBM Rational Rhapsody</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">TPT</td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">CANalyser</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">GITLAB</td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">ASCET</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">Matlab </td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">INCA</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">RQONE </td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">CSS</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">Java script </td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟</td>
-            </tr>
-            <tr class="Skills-Tool-Table-row">
-              <td class="Skills-Tool-Table-row-left">UDE Debugger</td>
-              <td class="Skills-Tool-Table-row-left-rating">🌟🌟🌟🌟</td>
-              <td class="Skills-Tool-Table-row-right">Soldering </td>
-              <td class="Skills-Tool-Table-row-right-rating">🌟🌟🌟🌟</td>
-            </tr>
-          </table>
 
         </div>
+        <div class="carousel-item">
 
-
-      </div>
-      <hr>
-      <div class="Achievement">
-        <h2>Acheivement</h2>
-        <div class="Achievement-box">
-          <img class="Achievement-img" src="images/achievement.png" alt="">
-        </div>
-        <div class="Achievement-row">
-          <p class="Achievement-desc"><strong>2nd Rank holder</strong> in Electronics and Instrumentation in Diploma.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="Education">
-        <h2>Education</h2>
-        <div class="Education-box">
-          <img class="Education-img" src="images/education.png" alt="">
-        </div>
-        <div class="Education-Table-box">
-          <div class="Education-table">
-            <table class="Education-Attribute-table">
-              <tr class="Education-row">
-                <td class="Education-Year">2016</td>
-                <td class="Education-Percentage">84.3%</td>
-                <td>Applied Electronics and Instrumentation <a href="https://www.cet.ac.in/">@ CET, Trivandrum, Kerala</a></td>
-              </tr>
-              <tr class="Education-row">
-                <td>2012</td>
-                <td>98.7%</td>
-                <td>Electronics and Instrumentation <a href="http://www.gptccherthala.org/">@ Govt.Polytechnic college, Cherthala, Kerala</a> </td>
-              </tr>
-              <tr class="Education-row">
-                <td>2009</td>
-                <td>86.5%</td>
-                <td>Plus Two <a href="https://www.studyapt.com/school-snm-gbhss-cherthala-alappuzha-kl">@ Govt.Boys Higher Secondary School, Cherthala, Kerala</a></td>
-              </tr>
-              <tr class="Education-row">
-                <td>2007</td>
-                <td>83.5%</td>
-                <td>SSLC <a href="https://schools.org.in/alappuzha/32110400909/holy-family-hss-cherthala.html">@ Holy Family Higher Secondary School, Cherthala, Kerala</a> </td>
-              </tr>
-            </table>
+          <h4><strong>Technician</strong><em><a href="https://sfotechnologies.net/">@Cochin, Kerala, India</a></em></h4>
+          <h6>06/2012 to 06/2013</h6>
+          <div class="row experience-row">
+            <div class="col col-lg-2 align-self-center company-img-box">
+              <img src="images/nest.png" class="company-img" alt="...">
+            </div>
+            <div class="col col-lg-8 align-self-center company-description">
+              <p>Soldering of PCB boards , Inspection,Testing and Debugging of Electronic Circuits.</p>
+            </div>
           </div>
+
         </div>
       </div>
-
-      <hr>
-      <div class="contact-me">
-
-        <h2>Get In Touch</h2>
-        <h3>Do you love coding as much as i do..</h3>
-        <p class="contact-desc">If you love coding as much as i do, then Let's talk about coding.</p>
-        <a class="btn" href="mailto:nithinkv101@gmail.com">CONTACT ME</a>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <hr>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills and Tools</h2>
+    <img src="images/skill.png" class="skills-img" alt="...">
+    <div class="row skills-row">
+      <div class="col col-lg-4 align-self-center skills-name-box">
+      <p>C</p>
+      <p>C++</p>
+      <p>Python</p>
+      <p>Linux</p>
+      <p>GL Studio</p>
+      <p>IBM rational rhapsody</p>
+      <p>TPT</p>
+      <p>CANalyser</p>
+      <p>UDE Debugger</p>
+      </div>
+      <div class="col col-lg-2 align-self-center skills-rating-box">
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟</p>
+      <p>🌟🌟</p>
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      </div>
+      <div class="col col-lg-4 align-self-center skills-name-box">
+      <p>HTML</p>
+      <p>GITLAB</p>
+      <p>ASCET</p>
+      <p>Matlab</p>
+      <p>INCA</p>
+      <p>RQONE</p>
+      <p>CSS</p>
+      <p>Java script</p>
+      <p>Soldering</p>
+      </div>
+      <div class="col col-lg-2 align-self-center skills-rating-box">
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
+      <p>🌟🌟🌟</p>
+      <p>🌟🌟🌟🌟</p>
       </div>
     </div>
+  </section>
+  <hr>
+  <!-- Acheivement Section -->
+  <section id="acheivement">
+      <h2>Acheivement</h2>
+        <img class="acheivement-img" src="images/achievement.png" alt="">
+        <p class="Achievement-desc"><strong>2nd Rank holder</strong> in Electronics and Instrumentation in Diploma.</p>
+  </section>
+  <hr>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <img class="education-img" src="images/education.png" alt="">
+    <div class="row education-row">
+      <div class="col col-lg-2 align-self-center education-year-box">
+      <p>2016</p>
+      <p>2012</p>
+      <p>2009</p>
+      <p>2007</p>
 
+      </div>
+      <div class="col col-lg-2 align-self-center education-percentage-box">
+      <p>84.3%</p>
+      <p>89.5%</p>
+      <p>86.5%</p>
+      <p>83.5%</p>
 
-    <div class="bottom-container">
+      </div>
+      <div class="col col-lg-8 align-self-center education-institution-box">
+      <p>Applied Electronics and Instrumentation <a href="https://www.cet.ac.in/">@ CET, Trivandrum, Kerala</a></p>
+      <p>Electronics and Instrumentation <a href="http://www.gptccherthala.org/">@ Govt.Polytechnic college, Cherthala, Kerala</a></p>
+      <p>Plus Two <a href="https://www.studyapt.com/school-snm-gbhss-cherthala-alappuzha-kl">@ Govt.Boys Higher Secondary School, Cherthala, Kerala</a></p>
+      <p>SSLC <a href="https://schools.org.in/alappuzha/32110400909/holy-family-hss-cherthala.html">@ Holy Family Higher Secondary School, Cherthala, Kerala</a></p>
+
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <h4>Do you love coding as much as i do..</h3>
+    <p class="contact-desc">If you love coding as much as i do, then Let's talk about coding.</p>
+    <a class="btn" href="mailto:nithinkv101@gmail.com">CONTACT ME</a>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="footer-box">
       <i class="fab fa-linkedin"></i>
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <i class="footer-icon fab fa-facebook-f"></i>
-      <a class="footer-link" href="https://www.facebook.com//">Facebook</a>
+      <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
       <i class="footer-icon fab fa-instagram"></i>
-      <a class="footer-link" href="https://www.facebook.com//">Instagram</a>
+      <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
       <p class="copy-right">© 2021 Nithin Kadathanad Vinod.</p>
-
     </div>
+  </section>
 
   </body>
 </html>

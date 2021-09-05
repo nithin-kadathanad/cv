@@ -132,5 +132,8 @@ a:hover{
 /* Footer section */
 .footer-box{
   background-color: #CDD0CB;
-  padding: 2% 1%;
+  padding: 1%;
+}
+.copy-right{
+  padding-top: 1%;
 }

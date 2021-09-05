@@ -59,8 +59,8 @@ a:hover{
 
 }
 .experience-row{
-  width: 80%;
-  margin: 2% 10%;
+  width: 75%;
+  margin: 2% 8%;
 }
 .company-description{
   text-align: left;
@@ -93,13 +93,15 @@ a:hover{
 }
 .education-row{
     margin: 2% 10%;
+    text-align: left;
 }
-.education-institution-box{
-  text-align: left;
-}
-.education-year-box{
+.education-percentage-box{
   text-align: right;
 }
+.education-institution-box{
+  text-align: right;
+}
+
 .btn {
   background: #a6aeb3;
   background-image: -webkit-linear-gradient(top, #a6aeb3, #98a4ab);
